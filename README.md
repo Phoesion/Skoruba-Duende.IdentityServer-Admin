@@ -1,34 +1,21 @@
-![Logo](docs/Images/Skoruba.Duende.IdentityServer.Admin-Logo-ReadMe.png)
-
-# Skoruba.Duende.IdentityServer.Admin ⚡
+# Phoesion.Glow.Skoruba.Duende.IdentityServer.Admin
 
 > The administration for the Duende IdentityServer and Asp.Net Core Identity
-
-## Project Status
-
-[![Build status](https://ci.appveyor.com/api/projects/status/563ug5gcxk904m6g/branch/main?svg=true)](https://ci.appveyor.com/project/JanSkoruba/duende-identityserver-admin/branch/main)
-[![Build status](https://img.shields.io/badge/Discord-Skoruba-%235865F2)](https://discord.gg/qTqQCSKWkX)
-
-The application is written in the **Asp.Net Core MVC - using .NET 9.0**
-
-## Requirements
-
-- [Install](https://www.microsoft.com/net/download/windows#/current) the latest .NET SDK (using older versions may lead to 502.5 errors when hosted on IIS or application exiting immediately after starting when self-hosted)
 
 ## Installation via dotnet new template
 
 - Install the dotnet new template:
 
-- 🔒 **NOTE:** The project uses the default database migrations which affect your database, therefore double check the migrations according to your database provider and create a database backup
+- 🔒 **NOTE:** The project uses the default database migrations that affect your database, therefore double-check the migrations according to your database provider and create a database backup
 
 ```sh
-dotnet new install Skoruba.Duende.IdentityServer.Admin.Templates::2.6.0
+dotnet new install Phoesion.Glow.Skoruba.Duende.IdentityServer.Admin.Templates::2.5.0
 ```
 
 ### Create new project:
 
 ```sh
-dotnet new skoruba.duende.isadmin --name MyProject --title MyProject --adminemail "admin@example.com" --adminpassword "Pa$$word123" --adminrole MyRole --adminclientid MyClientId --adminclientsecret MyClientSecret --dockersupport true
+dotnet new phoesion.glow.skoruba.duende.isadmin --name MyProject --title MyProject --adminemail "admin@example.com" --adminpassword "Pa$$word123" --adminrole MyRole --adminclientid MyClientId --adminclientsecret MyClientSecret --dockersupport false
 ```
 
 Project template options:
@@ -792,10 +779,6 @@ It is possible to define the configuration according the client type - by defaul
 ### 2.5.0
 
 - [x] Delete user from admin panel of admin app returns an error ([#214](https://github.com/skoruba/Duende.IdentityServer.Admin/issues/214))
-
-### 2.6.0
-
-- [x] Update to .NET 9 and the latest version of Duende IdentityServer 7.2.1 ([#250](https://github.com/skoruba/Duende.IdentityServer.Admin/issues/250))
 
 ### 3.0.0
 

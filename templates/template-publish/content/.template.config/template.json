@@ -1,15 +1,15 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Jan Skoruba",
+  "author": "Phoesion LTD, Jan Skoruba",
   "classifications": [
     "Web",
     "Duende IdentityServer",
     "Admin"
   ],
-  "name": "Skoruba Duende.IdentityServer Admin",
-  "identity": "Skoruba.Duende.IdentityServer.Admin",
-  "groupIdentity": "Skoruba.Duende.IdentityServer.Admin",
-  "shortName": "skoruba.duende.isadmin",
+  "name": "Skoruba Duende.IdentityServer Admin for Phoesion.Glow",
+  "identity": "Phoesion.Glow.Skoruba.Duende.IdentityServer.Admin",
+  "groupIdentity": "Phoesion.Glow.Skoruba.Duende.IdentityServer.Admin",
+  "shortName": "phoesion.glow.skoruba.duende.isadmin",
   "tags": {
     "language": "C#",
     "type": "project"
