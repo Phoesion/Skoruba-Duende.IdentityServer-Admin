@@ -4,7 +4,7 @@ param([string] $packagesVersions, [string]$gitBranchName = 'dev')
 # - Download latest version of Skoruba.Duende.IdentityServer.Admin from git repository
 # - Use folders src and tests for project template
 
-$gitProject = "https://github.com/skoruba/Duende.IdentityServer.Admin"
+$gitProject = "https://github.com/Phoesion/Skoruba-Duende.IdentityServer-Admin"
 $gitProjectFolder = "Skoruba.Duende.IdentityServer.Admin"
 $templateSrc = "template-build/content/src"
 $templateRoot = "template-build/content"
@@ -114,20 +114,20 @@ Remove-Item ./$templateTests -Force -recurse
 ######################################
 
 # Step 2
-$templateNuspecPath = "template-build/Skoruba.Duende.IdentityServer.Admin.Templates.nuspec"
+$templateNuspecPath = "template-build/Phoesion.Glow.Skoruba.Duende.IdentityServer.Admin.Templates.nuspec"
 nuget pack ./$templateNuspecPath -NoDefaultExcludes
 
 ######################################
 # Step 3
-$templateLocalName = "Skoruba.Duende.IdentityServer.Admin.Templates.$packagesVersions.nupkg"
+$templateLocalName = "Phoesion.Glow.Skoruba.Duende.IdentityServer.Admin.Templates.$packagesVersions.nupkg"
 
-dotnet new --uninstall Skoruba.Duende.IdentityServer.Admin.Templates
+dotnet new --uninstall Phoesion.Glow.Skoruba.Duende.IdentityServer.Admin.Templates
 dotnet new -i ./$templateLocalName
 
 ######################################
 # Step 4
 # Create template for fixing project name
-dotnet new skoruba.duende.isadmin --name SkorubaDuende.IdentityServerAdmin --title "Skoruba Duende IdentityServer Admin" --adminrole SkorubaIdentityAdminAdministrator --adminclientid skoruba_identity_admin --adminclientsecret skoruba_admin_client_secret
+dotnet new phoesion.glow.skoruba.duende.isadmin --name SkorubaDuende.IdentityServerAdmin --title "Skoruba Duende IdentityServer Admin" --adminrole SkorubaIdentityAdminAdministrator --adminclientid skoruba_identity_admin --adminclientsecret skoruba_admin_client_secret
 
 ######################################
 # Step 5

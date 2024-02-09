@@ -1,4 +1,4 @@
-# Skoruba.Duende.IdentityServer.Admin for Phoesion Glow
+# Phoesion.Glow.Skoruba.Duende.IdentityServer.Admin
 
 > The administration for the Duende IdentityServer and Asp.Net Core Identity
 
@@ -6,16 +6,16 @@
 
 - Install the dotnet new template:
 
-- 🔒 **NOTE:** The project uses the default database migrations which affect your database, therefore double check the migrations according to your database provider and create a database backup
+- 🔒 **NOTE:** The project uses the default database migrations that affect your database, therefore double-check the migrations according to your database provider and create a database backup
 
 ```sh
-dotnet new install Skoruba.Duende.IdentityServer.Admin.Templates::2.0.0
+dotnet new install Phoesion.GlowSkoruba.Duende.IdentityServer.Admin.Templates::2.0.0
 ```
 
 ### Create new project:
 
 ```sh
-dotnet new skoruba.duende.isadmin --name MyProject --title MyProject --adminemail "admin@example.com" --adminpassword "Pa$$word123" --adminrole MyRole --adminclientid MyClientId --adminclientsecret MyClientSecret --dockersupport true
+dotnet new phoesion.glow.skoruba.duende.isadmin --name MyProject --title MyProject --adminemail "admin@example.com" --adminpassword "Pa$$word123" --adminrole MyRole --adminclientid MyClientId --adminclientsecret MyClientSecret --dockersupport false
 ```
 
 Project template options:
