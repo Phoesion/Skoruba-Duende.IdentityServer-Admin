@@ -9,6 +9,17 @@
         <DockerfileContext>..\..</DockerfileContext>
     </PropertyGroup>
 
+    <!-- Phoesion Glow Firefly packages -->
+    <ItemGroup>
+		<PackageReference Include="Phoesion.Glow.SDK.Firefly.AspHost" Version="1.1.4" />
+		<PackageReference Include="Phoesion.Glow.SDK.Firefly.SrvHost.DotNet.AppHost" Version="1.1.4" />
+		<PackageReference Include="Phoesion.Glow.SDK.ReactorDebugger" Version="1.1.4" Condition="'$(GlowPublishing)'!='true'" />
+		<!-- Resolve conflicts -->
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.8.0" />
+		<!-- Others -->
+    </ItemGroup>
+  
     <ItemGroup>
 		<PackageReference Include="AspNetCore.HealthChecks.MySql" Version="8.0.0" />
 		<PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="8.0.0" />

@@ -9,7 +9,7 @@
 - 🔒 **NOTE:** The project uses the default database migrations that affect your database, therefore double-check the migrations according to your database provider and create a database backup
 
 ```sh
-dotnet new install Phoesion.GlowSkoruba.Duende.IdentityServer.Admin.Templates::2.0.0
+dotnet new install Phoesion.Glow.Skoruba.Duende.IdentityServer.Admin.Templates::2.0.0
 ```
 
 ### Create new project:
